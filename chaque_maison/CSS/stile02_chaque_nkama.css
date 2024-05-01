@@ -1,0 +1,109 @@
+
+
+
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+}
+
+header figure {
+  text-align: center;
+  width: fit-content;
+  height: 350px;
+  background-color: #ccc;
+  margin-left: 135px;
+}
+
+header figure img {
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+  /* max-width: 100%; */
+}
+
+.wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  margin-left:-40px;
+}
+
+.header-front {
+  opacity: 100;
+}
+.header-back {
+  opacity: 0;
+}
+
+header button {
+  margin: 0 auto;
+  /* width: 10%; */
+  text-align: center;
+  display: inline-block;
+  margin-left:50px;
+}
+
+section {
+  position: relative;
+  width: 103%;
+  height: 7.53vw;
+  margin: 10vh auto;
+  margin-left:75px;
+  /* overflow: hidden; */
+}
+
+section figure {
+  transition: left 1s;
+  position: absolute;
+  width: 15%;
+  z-index: 1;
+}
+
+section figure img {
+  max-width: 100%;
+}
+
+section .shuffle0 {
+  left: 42.5%;
+}
+
+section .shuffle1 {
+  left: 63.75%;
+}
+
+section .shuffle2 {
+  left: 85%;
+}
+
+section .shuffle3, .shuffle4 {
+  left: 106.25%;
+}
+
+section .shuffle5 {
+  left: -21.25%;
+}
+
+section .shuffle3, section .shuffle4, section .shuffle5 {
+  opacity: 0;
+  transition: left 1s, opacity 0s 1s;
+}
+
+section .shuffle6 {
+  left: 0%;
+}
+
+section .shuffle7 {
+  left: 21.25%;
+}
+
+section #highlight {
+  left: 42.5%;
+  outline: 4px solid #bdb81d;
+  width: 15%;
+  height: -webkit-fill-available;
+  /* background-color: red; */
+}
+

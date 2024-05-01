@@ -1,0 +1,120 @@
+
+.container {
+  position: static;
+  
+  
+  width: 90%;
+}
+
+.container .card {
+  width: 950px;
+  height: 1250px;
+  position: static;
+  padding: 40px 30px;
+  background: #1bbb4cc7;
+  border-radius: 40px;
+  box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 6px 6px 20px rgba(0, 0, 0, 0.1);
+  
+}
+
+.container .card:hover {
+  box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.5), inset 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.container .card {
+	padding-left:110px;
+  position: static;
+  text-align: center;
+  width: max-content;
+}
+
+.imgBx {
+  position: static;
+}
+
+.container .card .imgBx img {
+  min-width: 120px;
+  
+}
+
+
+
+
+
+
+.container .card .contentBx a:hover {
+  box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5), inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .card a:hover span {
+  display: block;
+  transform: scale(0.98);
+}
+
+.container .card:hover .imgBx,
+.container .card:hover .contentBx {
+  transform: scale(0.98);
+}
+
+
+@media (max-width: 1280px) {
+
+.container {
+  position: static;
+  
+  
+  width: 90%;
+}
+
+.container .card {
+  width: 950px;
+  height: 1280px;
+  position: static;
+  padding: 40px 30px;
+  background: #1bbb4cc7;
+  border-radius: 40px;
+  box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 6px 6px 20px rgba(0, 0, 0, 0.1);
+  
+}
+
+.container .card:hover {
+  box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.5), inset 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.container .card {
+	padding-left:110px;
+  position: static;
+  text-align: center;
+  width: max-content;
+}
+
+.imgBx {
+  position: static;
+}
+
+.container .card .imgBx img {
+  min-width: 120px;
+  
+}
+
+
+
+
+
+
+.container .card .contentBx a:hover {
+  box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5), inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .card a:hover span {
+  display: block;
+  transform: scale(0.98);
+}
+
+.container .card:hover .imgBx,
+.container .card:hover .contentBx {
+  transform: scale(0.98);
+}
+}
+
+
