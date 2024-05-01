@@ -1,0 +1,300 @@
+
+
+/*--------------
+SLIDER STYLES
+---------------*/
+
+/* slider-container */
+.sliderContainer{
+    height: 100%; /*height of images/slides*/
+    width: 100%; /*width of images/slides*/
+    /*so we can position stuff in it*/
+}
+.sliderimg{
+    height: 100%;/*height of images/slides*/
+    width: 100%;/*width of images/slides*/
+}
+
+/* cela nous permet d'afficher les images des slides d'en-tête de manière réuni dès l'ouverture de la page au cas contraire les image seront les unes sur les autres */
+.hide{
+    display: none;
+}
+
+
+/*caption box*/
+.slidertext{
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 10px 100px 10px 50px;
+    position: absolute;
+    bottom: 50px;
+    right: 0; /*alines the caption box to the right*/
+    width: 80%; /*adjust how wide you want the box to be*/
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+
+
+
+/*----NEXT/PREV ARROW CSS--*/
+/*--these boxes hold your next/prev arrows/html--*/
+.left_box, .right_box{
+    height: 100%; /*height of images/slides*/
+    width: 100%;
+}
+.left_box{
+    /*place at left of slide*/
+    position: absolute;
+    left: 0px;
+    
+}
+.right_box{
+    /*place at right of slide*/
+    position: absolute;
+    right: 0px;
+    
+}
+
+@media (min-width: 960px) {
+.right_box {
+    margin-top: 445px;
+  }
+  
+  .left_box {
+    margin-top: 445px;
+  }
+ }
+
+@media (min-width: 520px) {
+.left_box {
+    top: -1010px;
+  }
+ }
+ 
+ @media (min-width: 520px) {
+.right_box {
+    top: -1010px;
+  }
+ }
+
+ @media (min-width: 1100px) {
+.right_box {
+    top: -495px;
+  }
+ }
+ 
+  @media (min-width: 1100px) {
+.left_box {
+    top: -495px;
+  }
+ }
+
+/*--these are the styles for your arrows/html in the boxes--*/
+/*being I'm using text and not an image for the arrows I've quite a bit of styling here*/
+.prev, .next{
+    cursor: pointer;
+    color: cornsilk;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 1.0s ease;
+    border-radius: 0 3px 3px 0;
+    padding: 5px;
+    z-index: 2;
+}
+/*--placing the arrows near center of images edge--*/
+.prev{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 40%;
+    left: 0px;
+}
+.next{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 40%;
+    right: 0px;
+    text-align: right;
+}
+
+/* on hover add a transparent black */
+.prev:hover, .next:hover {
+  background-color: yellow;
+}
+/*----END NEXT/PREV ARROW CSS--*/
+
+/*--The dots/bullets/indicators--*/
+/*--places the dots in the bottom center of the slides--*/
+.imagedots{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
+    position: unset;
+    bottom: 260px;
+}
+/*--what the dots look like--*/
+.dot {
+    cursor:pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: none;
+    border: 1px solid cornsilk;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: background-color 0.7s ease;
+    -moz-transition: background-color 0.7s ease;
+    -o-transition: background-color 0.7s ease;
+    transition: background-color 0.7s ease;
+    z-index: 2;
+}
+.active, .dot:hover {
+    /*customize this to change what the active/hovered dot looks like*/
+  background-color: cornflowerblue;
+}
+
+/*---Fading animation used for dots---*/
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-name: fade;
+    -moz-animation-duration: 1.5s;
+    -o-animation-name: fade;
+    -o-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@-moz-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@-o-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*--------------
+SLIDER STYLES
+---------------*/
+
+/* slider-container */
+.sliderContainer{
+    width: 102%; /*width of images/slides*/
+    margin-left: 0; /*not needed as we work with %*/
+	margin-top: 60px;
+}
+.sliderimg{
+    width: 100%;/*width of images/slides*/
+    object-fit: cover; /*so images aren't distorted, but will be cut off to fit in box*/
+}
+
+/*caption box*/
+.slidertext{
+    width: 60%; /*adjust how wide you want the box to be*/
+}
+
+/*if you want to style individual slides, give them an ID and style them here*/
+#slide4{
+    width: 100%;/*width of images/slides*/
+    padding: 5px;
+}
+
+/*----NEXT/PREV ARROW CSS--*/
+
+/*--these are the styles for your arrows/html in the boxes--*/
+.prev, .next{
+    font-size: 30px;
+    background-color: rgba(0,0,0,0.8);
+}
+/* I took out the on hover and made it always have the background*/
+.prev:hover, .next:hover {
+  background-color: none;
+}
+/*----END NEXT/PREV ARROW CSS--*/
+
+/*--The dots/bullets/indicators--*/
+.dot {
+    height: 30px;
+    width: 30px;
+}
+
+}/*end style 900*/
+
+
+/*--------------
+SLIDER STYLES
+---------------*/
+
+/* slider-container */
+.sliderContainer{
+    width: 100%; /*width of images/slides*/
+    margin-left: 0; /*this isn't needed as the width above is a %*/
+}
+.sliderimg{
+    width: 100%;/*width of images/slides*/
+    object-fit: contain;/*fits the image in the box*/
+    background-color: cornflowerblue;
+}
+
+/*caption box*/
+.slidertext{
+    width: 100%; /*adjust how wide you want the box to be*/
+}
+
+/*if you want to style individual slides, give them an ID and style them here*/
+#slide4{
+    width: 100%;/*width of images/slides*/
+}
+#slide4 p{
+    /*the text doesn't fit so I just hide it*/
+    display: none;
+}
+
+/*----NEXT/PREV ARROW CSS--*/
+/*--these boxes hold your next/prev arrows/html--*/
+.left_box, .right_box{
+    width: 50px;
+}
+
+/*--these are the styles for your arrows/html in the boxes--*/
+/*being I'm using text and not an image for the arrows I've quite a bit of styling here*/
+.prev, .next{
+    font-size: 40px;
+    background-color: transparent;
+}
+.prev{
+    top: 80%;
+}
+.next{
+    top: 80%;
+}
+
+/* I took out the on hover and made it always have the background*/
+    .prev:hover, .next:hover {
+  background-color: none;
+}
+/*----END NEXT/PREV ARROW CSS--*/
+
+/*--The dots/bullets/indicators--*/
+
+.dot {
+    height: 30px;
+    width: 30px;
+}
+
+}/*--END MEDIA QUERY 599---*/
+

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		
+		<link rel="stylesheet" href="./CSS/style.css" />
+		<link rel="stylesheet" href="./CSS/slides.css">
+		<link rel="stylesheet" href="./CSS/cult.css">
+		
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+			integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+			crossorigin="anonymous"
+		/>
+		
+		<link rel="icon" href="./images/img/logo.png" type="image/jpg" />
+    
+		<script
+			src="https://kit.fontawesome.com/89faee3931.js"
+			crossorigin="anonymous"
+		></script>
+    
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous"
+		></script>
+    
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script>
+		
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+			integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+			crossorigin="anonymous"
+		></script>
+    
+		<title>YROYAL-HOOSE une maison à portée de main dans Fraceville et le reste du Gabon</title>
+		
+		<!--lien javascript pour les slide -->
+			<script src="msunshineslider.js"></script>
+	</head>
+  
+	<body>
+		<header>
+			<!-- NAVBAR WITH RESPONSIVE TOGGLE -->
+			<nav class="navbar navbar-toggleable-md" style=" position: fixed; width: -webkit-fill-available; ">
+				
+				<div class="container">
+					
+					<button
+						class="navbar-toggler navbar-toggler-right"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarNav">
+						<i class="fas fa-bars"></i>
+					</button>
+					
+					<img src="images/img/logo.png" alt="">
+					
+					<a
+						class="navbar-brand d-flex align-items-center logo"
+						href="index_acceuil.html" style=" margin-left: 350px ">
+					</a>
+
+					<div class="collapse navbar-collapse" id="navbarNav">
+            
+						<ul class="navbar-nav">
+              
+							<li class="nav-item">
+							
+								<a class="nav-link" href="index_acceuil.html">
+									
+									<i class="fas fa-home mr-2"></i>HOME
+								
+								</a>
+							</li>
+              
+							<li class="nav-item">
+                
+								<a class="nav-link" href="#catcat">
+									<i class="fas fa-th-large mr-2">
+									</i>Catalogues Immobiliers
+								</a>
+							</li>
+              
+							<li class="nav-item">
+								<a class="nav-link" href="#cultcult">
+									<i class="fas fa-shopping-cart mr-2">
+									</i>Espace Culturel
+								</a>
+							</li>
+              
+							<li class="nav-item">
+								<a class="nav-link" href="#contcont">
+									<i class="fas fa-address-card mr-2">
+									</i>CONTACT US
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+		<main>
+			<div class="search-section py-5 mb-4">
+				
+				<!----------- Commencement des slide à image qui défile --------------->
+				<div class="sliderContainer slider1">
+					<!---------------- Put all your slides in here, in the order you want them. Use the first slide to copy/paste as a template. ------------------->
+					<div class="slide">
+						<!--put the slider image here with class of sliderimg-->
+						<img src="images/img/R.jpg" class="sliderimg"/>
+					</div><!--end slide 1-->
+					
+					<div class="slide hide">
+						<img src="images/img/mince.jpg" class="sliderimg"/></a>
+					</div><!--end slide 2-->
+					
+					<div class="slide hide">
+						<img src="images/img/trouver.jpg" class="sliderimg"/>
+					</div><!--end slide 3-->
+					
+					<div class="slide hide">
+						<img src="images/img/wel.png" class="sliderimg"/>
+					</div><!--end slide 4-->
+					
+					<!----------------
+					These are the next/previous buttons. Whatever you want to use as the buttons put them in the left_holder/right_holder and give them a class of left/right which you can then style in the stylesheet.
+					------------------->
+					<div class="left_box">
+						<a class="prev" onclick="slide(-1)">&#10094;</a>
+					</div>
+					
+					<div class="right_box"> 
+						<a class="next" onclick="slide(1)">&#10095;</a>
+					</div>
+    
+					<div class="imagedots">
+						<!----------------
+						Add a dot for each slide, with the slide's number in the ()
+						The first dot is active as the first slide is what is shown when the page loads
+						------------------->
+						<span class="dot active" onclick="currentSlide(1)"></span> 
+						<span class="dot" onclick="currentSlide(2)"></span> 
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span>
+						
+					</div>
+				</div><!--slider container-->
+				<!-------------
+				END SLIDER STUFF
+				--------------->
+				
+			</div>
+
+			<div class="featured-games px-sm-5">
+				<h5 class="mx-3">
+					<i class="fas fa-award mr-2"></i>NOTRE SELECTION
+				</h5>
+        
+				<div class="items-container row justify-content-around align-items-center py-4">
+				
+					<div class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3">
+						<img class="w-100 mb-2" src="images/img/m.jpg" alt="SIMS 4" />
+              
+						<div class="item-info">
+							<h5>MAISON N.001</h5>
+						
+							<div class="my-2">
+								<strong>Ville :</strong> Franceville
+							</div>
+							
+							<div class="my-2">
+								<strong>Quartier :</strong> Maboukou
+							</div>
+                
+							<div class="d-flex justify-content-between align-items-center">
+							
+								<!--Ici il faudra soit le changer, soit ajouter un lien-->
+								<i class="far fa-plus-square fa-2x"></i>
+							
+								<div>
+									<a href="chaque_maison/index_chaque_nkama.html">
+										<span class="newprice">Consulter</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3">
+						<img class="w-100 mb-2" src="images/img/m.jpg" alt="SIMS 4" />
+              
+						<div class="item-info">
+							<h5>MAISON N.002</h5>
+						
+							<div class="my-2">
+								<strong>Ville :</strong> Franceville
+							</div>
+							
+							<div class="my-2">
+								<strong>Quartier :</strong> Maboukou
+							</div>
+                
+							<div class="d-flex justify-content-between align-items-center">
+							
+								<!--Ici il faudra soit le changer, soit ajouter un lien-->
+								<i class="far fa-plus-square fa-2x"></i>
+							
+								<div>
+									<a href="chaque_maison/index_chaque_nkama.html">
+										<span class="newprice">Consulter</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3">
+						<img class="w-100 mb-2" src="images/img/m.jpg" alt="SIMS 4" />
+              
+						<div class="item-info">
+							<h5>MAISON N.003</h5>
+						
+							<div class="my-2">
+								<strong>Ville :</strong> Franceville
+							</div>
+							
+							<div class="my-2">
+								<strong>Quartier :</strong> Maboukou
+							</div>
+                
+							<div class="d-flex justify-content-between align-items-center">
+							
+								<!--Ici il faudra soit le changer, soit ajouter un lien-->
+								<i class="far fa-plus-square fa-2x"></i>
+							
+								<div>
+									<a href="chaque_maison/index_chaque_nkama.html">
+										<span class="newprice">Consulter</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3">
+						<img class="w-100 mb-2" src="images/img/m.jpg" alt="SIMS 4" />
+              
+						<div class="item-info">
+							<h5>MAISON N.004</h5>
+						
+							<div class="my-2">
+								<strong>Ville :</strong> Franceville
+							</div>
+							
+							<div class="my-2">
+								<strong>Quartier :</strong> Maboukou
+							</div>
+                
+							<div class="d-flex justify-content-between align-items-center">
+							
+								<!--Ici il faudra soit le changer, soit ajouter un lien-->
+								<i class="far fa-plus-square fa-2x"></i>
+							
+								<div>
+									<a href="chaque_maison/index_chaque_nkama.html">
+										<span class="newprice">Consulter</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3">
+						<img class="w-100 mb-2" src="images/img/m.jpg" alt="SIMS 4" />
+              
+						<div class="item-info">
+							<h5>MAISON N.005</h5>
+						
+							<div class="my-2">
+								<strong>Ville :</strong> Franceville
+							</div>
+							
+							<div class="my-2">
+								<strong>Quartier :</strong> Maboukou
+							</div>
+                
+							<div class="d-flex justify-content-between align-items-center">
+							
+								<!--Ici il faudra soit le changer, soit ajouter un lien-->
+								<i class="far fa-plus-square fa-2x"></i>
+							
+								<div>
+									<a href="chaque_maison/index_chaque_nkama.html">
+										<span class="newprice">Consulter</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3">
+						<img class="w-100 mb-2" src="images/img/m.jpg" alt="SIMS 4" />
+              
+						<div class="item-info">
+							<h5>MAISON N.006</h5>
+						
+							<div class="my-2">
+								<strong>Ville :</strong> Franceville
+							</div>
+							
+							<div class="my-2">
+								<strong>Quartier :</strong> Maboukou
+							</div>
+                
+							<div class="d-flex justify-content-between align-items-center">
+							
+								<!--Ici il faudra soit le changer, soit ajouter un lien-->
+								<i class="far fa-plus-square fa-2x"></i>
+							
+								<div>
+									<a href="chaque_maison/index_chaque_nkama.html">
+										<span class="newprice">Consulter</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3">
+						<img class="w-100 mb-2" src="images/img/m.jpg" alt="SIMS 4" />
+              
+						<div class="item-info">
+							<h5>MAISON N.007</h5>
+						
+							<div class="my-2">
+								<strong>Ville :</strong> Franceville
+							</div>
+                
+							<div class="my-2">
+								<strong>Quartier :</strong> Maboukou
+							</div>
+				
+							<div class="d-flex justify-content-between align-items-center">
+							
+								<!--Ici il faudra soit le changer, soit ajouter un lien-->
+								<i class="far fa-plus-square fa-2x"></i>
+							
+								<div>
+									<a href="chaque_maison/index_chaque_nkama.html">
+										<span class="newprice">Consulter</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3">
+						<img class="w-100 mb-2" src="images/img/m.jpg" alt="SIMS 4" />
+              
+						<div class="item-info">
+							<h5>MAISON N.008</h5>
+						
+							<div class="my-2">
+								<strong>Ville :</strong> Franceville
+							</div>
+							
+							<div class="my-2">
+								<strong>Quartier :</strong> Maboukou
+							</div>
+                
+							<div class="d-flex justify-content-between align-items-center">
+							
+								<!--Ici il faudra soit le changer, soit ajouter un lien-->
+								<i class="far fa-plus-square fa-2x"></i>
+							
+								<div>
+									<a href="chaque_maison/index_chaque_nkama.html">
+										<span class="newprice">Consulter</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3">
+						<img class="w-100 mb-2" src="images/img/m.jpg" alt="SIMS 4" />
+              
+						<div class="item-info">
+							<h5>MAISON N.009</h5>
+						
+							<div class="my-2">
+								<strong>Ville :</strong> Franceville
+							</div>
+                
+							<div class="my-2">
+								<strong>Quartier :</strong> Maboukou
+							</div>
+							
+							<div class="d-flex justify-content-between align-items-center">
+							
+								<!--Ici il faudra soit le changer, soit ajouter un lien-->
+								<i class="far fa-plus-square fa-2x"></i>
+							
+								<div>
+									<a href="chaque_maison/index_chaque_nkama.html">
+										<span class="newprice">Consulter</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3">
+						<img class="w-100 mb-2" src="images/img/m.jpg" alt="SIMS 4" />
+              
+						<div class="item-info">
+							<h5>MAISON N.010</h5>
+						
+							<div class="my-2">
+								<strong>Ville :</strong> Franceville
+							</div>
+							
+							<div class="my-2">
+								<strong>Quartier :</strong> Maboukou
+							</div>
+                
+							<div class="d-flex justify-content-between align-items-center">
+							
+								<!--Ici il faudra soit le changer, soit ajouter un lien-->
+								<i class="far fa-plus-square fa-2x"></i>
+							
+								<div>
+									<a href="chaque_maison/index_chaque_nkama.html">
+										<span class="newprice">Consulter</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3">
+						<img class="w-100 mb-2" src="images/img/m.jpg" alt="SIMS 4" />
+              
+						<div class="item-info">
+							<h5>MAISON N.011</h5>
+						
+							<div class="my-2">
+								<strong>Ville :</strong> Franceville
+							</div>
+							
+							<div class="my-2">
+								<strong>Quartier :</strong> Maboukou
+							</div>
+                
+							<div class="d-flex justify-content-between align-items-center">
+							
+								<!--Ici il faudra soit le changer, soit ajouter un lien-->
+								<i class="far fa-plus-square fa-2x"></i>
+							
+								<div>
+									<a href="chaque_maison/index_chaque_nkama.html">
+										<span class="newprice">Consulter</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3">
+						<img class="w-100 mb-2" src="images/img/m.jpg" alt="SIMS 4" />
+              
+						<div class="item-info">
+							<h5>MAISON N.012</h5>
+						
+							<div class="my-2">
+								<strong>Ville :</strong> Franceville
+							</div>
+							
+							<div class="my-2">
+								<strong>Quartier :</strong> Maboukou
+							</div>
+                
+							<div class="d-flex justify-content-between align-items-center">
+							
+								<!--Ici il faudra soit le changer, soit ajouter un lien-->
+								<i class="far fa-plus-square fa-2x"></i>
+							
+								<div>
+									<!--Ici il faudra ajouter un lien-->
+									<a href="chaque_maison/index_chaque_nkama.html">
+										<span class="newprice">Consulter</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					
+				</div>
+			</div>
+      
+			<div style=" background-size: contain; height: 500px; background-image: url( images/img/msn.png); margin-right: -17px;" id="catcat">
+				<div class="categories-section p-5 bg-faded">	
+						
+					<!-- symbole de la foudre <i class="fas fa-bolt mr-2"></i> on pourra l'utiliser prochainement -->
+				
+					<h5><i class="fas fa-th-large mr-2"></i>CATALOGUE IMMOBILIER</h5><br><br>
+				
+					<p style=" color: aliceblue;">Vous ne trouvez pas de satisfaction dans notre sélection...?<br><br>
+						Alors<br>
+						N'hésitez pas à parcourir nos Catalogues
+					</p>
+				</div>
+			</div>
+			
+			<div  class="row" style=" margin-top: -240px; margin-bottom: 75px; padding-left: 18px; padding-right: 15px;">
+				<div class="col-lg-4" style=" position: static; ">
+					<div class="single-service">
+						<img class="img-fluid" src="images/img/supra.png" style=" margin-bottom: 10px; height:200px;">
+						<h4>Logements Supra</h4>
+						<p>
+							Vous trouverez ici des habitations de hauts standing. Qui repondent à des hauts critaires d'exigences.
+						</p>
+						
+						<div>	
+							<a href="logement_supra/index_supra.html">      
+								<button class="btnnn">parcourir</button>
+							</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4" style=" position: static; ">
+					<div class="single-service">
+						<img class="img-fluid" src="images/img/mitra.png" style=" margin-bottom: 10px; height:200px;">
+						<h4>Logements Mitra</h4>
+						<p>
+							Vous trouverez dans ce catalogue des habitations avec des critères moyens et aux exigences réduitent.
+						</p>
+						
+						<div>	
+							<a href="logement_mitra/index_mitra.html">      
+								<button class="btnnn">parcourir</button>
+							</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4" style=" position: static; ">
+					<div class="single-service">
+						<img class="img-fluid" src="images/img/infra.png" style=" margin-bottom: 10px; height:200px;">
+						<h4>Logements Infra</h4>
+						<p>
+							Ici nous avons des Logements accessibles à tous, sans exigences ou critères particulier autoure de ces derniers.
+						</p>
+						
+						<div>	
+							<a href="logement_infra/index_infra.html">      
+								<button class="btnnn">parcourir</button>
+							</a>
+						</div>
+					</div>
+				</div>														
+			</div>
+			
+			<div class="kitty-container" id="cultcult">	
+			
+				<img class="onscreen" src="images/img/iilles.jpeg" />
+				<img src="images/img/lekoni.jpg" />
+				<img src="images/img/lianne.jpg" />
+				<img src="images/img/costume.jpg" />
+			
+				<div class="about_me">
+					<h1 class="about_me_heading">Espace Culturel</h1>
+					<p class="about_me_description">
+						Des bords de l’océan aux cœurs de la forêt, notre pays le Gabon reste digne de ses lettres de noblesses.<br>
+						Des lettres de noblesse que nous vous invitons à découvrir à partir d’une aventure à travers le pays.<br>
+						Á la découverte de la culture, de la faune et la flore.   
+					</p>
+					
+					<a href="index_cultur_go.html">
+						<button class="resume_btn">Aller à la Découverte</button>
+					</a>
+				</div>
+			</div>
+			
+				
+			<script type="text/javascript" src="js/script.js"></script>
+			<!-- fin des slide de la partie culturelle -->
+		</main>
+
+		<footer class="p-4" style=" margin-top: 462px; background-color: midnightblue;margin-right: -19px; " id="contcont">
+			<div style=" margin-left: 15px; ">
+				
+				
+				<div class="row">
+							<div class="col-lg-3" style="position:static;" >
+								<div class="single-footer-widget">
+									<h6 style=" font-size: large; font-weight: bold; color: yellow;">A Propos de Nous</h6>
+									<p>
+										YROYAL-HOUSE est une Startup qui s'est donnée pour mission de faciliter aux plus grand nombre l'accès à une maison de location.<br><br> Des maison localisées principalement dans Franceville et par extention dans le haut-ogooue mais aussi dans le reste du pays.<br><br> Tous ceci en mettant un accent particulier sur la valorisation du patrimoine culturelle de chacune des localitées dans lesquelles nous intervenons.  
+									</p>
+									
+								</div>
+							</div>
+							
+							<div class="col-lg-3" style="margin-left: 100px;">
+								<div class="notre" style="width: max-content">
+									<h6 style=" font-size: large; font-weight: bold; color: yellow;">Notre Actualité</h6>
+									<p>Revivez avec nous les moments forts de nos activités</p>
+									
+								</div>
+								
+								<div class="containere">
+									<img src="images/img/taff.jpg" class="Notebook" style="height:90%;">
+									<a href="#">
+										<div class="contente">
+											<h4 style=" font-size: large; font-weight: bold; color: yellow;">Prise de Vue</h4>
+											<p style=" color: white;">Nous avons été agréablement surpris lors de notre...</p>
+										</div>
+									</a>
+								</div>
+								
+							</div>
+							
+							<div class=" suivre ">
+								<div style=" margin-left: 525px; margin-top: -190px">
+									
+									<h6 style=" font-size: large; font-weight: bold; color: yellow; margin-top: 10px;">Suivez Nous</h6>
+										
+									<a href="#">
+										<i class="fa fa-whatsapp" aria-hidden="true"></i>
+										<p>Whatsapp</p>
+									</a>	
+									<a href="#">
+										<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+										<p>Linkedin</p>
+									</a>	
+									<a href="#">
+										<i class="fa fa-snapchat-square" aria-hidden="true"></i>
+										<p>Snapchat</p>
+									</a>	
+									<a href="#">
+										<i class="fa fa-instagram" aria-hidden="true"></i>
+										<p>Instagram</p>
+									</a>
+								</div>
+							</div>
+							
+							<div class=" col-xl-10 " >
+								
+								<p class="footer-text" style=" color: yellow; font-size: small; margin-top: 20px; margin-bottom: -5px; width: max-content; padding-left: 315px;">
+										Copyright YROYAL-HOUSE &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Developped by <a  href=" " target=" ">YROYAL_Ink</a>
+								</p>
+								
+							</div>
+						</div>
+				
+				
+				<!--
+				<div class="d-flex col-md-2 row-sm justify-content-center">
+					<a href="#">
+						<i
+							class="fa fa-facebook-square footer-icons m-2"
+							aria-hidden="true">
+						</i>
+					</a>
+          
+					<a href="#">
+						<i class="fa fa-twitter m-2 footer-icons" aria-hidden="true"></i>
+					</a>
+          
+					<a href="#">
+						<i class="fa fa-instagram m-2 footer-icons" aria-hidden="true"></i>
+					</a>
+          
+					<a href="#">
+						<i class="fa fa-linkedin m-2 footer-icons" aria-hidden="true"></i>
+					</a>
+				</div> -->
+			</div>
+		</footer>
+	</body>
+</html>
